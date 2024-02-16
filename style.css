@@ -6,6 +6,8 @@
 
 html {
     min-height: 100vh;
+    /* Root font-size is the value of REM (i.e 1rem = 16px) */
+    font-size: 16px;
 }
 
 body {
@@ -18,8 +20,7 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    align-self:flex-start;
+    justify-content:space-between;
     grid-column: 2/ span 4;
     gap: 4rem;
     margin-top: 1.2rem;
@@ -31,7 +32,7 @@ body {
 .search {
     display: flex;
     flex-direction: row;
-    margin-left: -9rem;
+    margin-left: .1rem;
     gap: 1rem;
 }
 
@@ -48,6 +49,7 @@ input {
 .user_profile {
     display: flex;
     flex-direction: row;
+    margin-right: .4rem;
     gap: 1rem;
 }
 
@@ -66,6 +68,39 @@ input {
 
 .sidebar {
     grid-row: 1 / span 4;
+    gap: 1.2rem;
+    margin-left: 1.5rem;
+}
+
+.dashboard {
+    display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;   
+    gap: 1rem;
+}
+
+.first_layer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column: 1/ span 2;
+    gap: 1rem;
+}
+
+.second_layer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: 1/ span 2;
+    gap: 1rem;
 }
 
 
