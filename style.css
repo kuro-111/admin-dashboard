@@ -13,11 +13,12 @@ html {
     font-style: normal;
 }
 
+
 body {
     display: grid;
     grid-template-columns: .8fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    background-color: #cbd5e1;
+    grid-template-rows: 1fr 1fr 1fr .5fr;
+    background-color: #d4deeb;
 
 }
 
@@ -31,7 +32,7 @@ body {
     height: 14rem;
     padding: 1.3rem;
     align-items: center;
-    background-color: #ebf2f3;
+    background-color: #063a58;
 }
 
 .search_icon {
@@ -61,13 +62,13 @@ input {
 
 a:link {
     text-decoration: none;
-    color:black;
+    color: white;
     flex-shrink: 0;
 
 }
 
 a:visited {
-    color: black;
+    color: white;
 }
 
 .profile_icon_small {
@@ -80,6 +81,7 @@ a:visited {
     align-self: stretch;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 
@@ -99,6 +101,7 @@ a:visited {
     width: 45%;
     height: 3rem;
     gap: .9rem;
+    color: white;
 }
 
 .profile_icon_big {
@@ -116,7 +119,7 @@ a:visited {
     height: 2rem;
     border-radius: 1rem;
     border-style: none;
-    background-color: #155e75;
+    background-color:#77abb1de;
     color: white;
     font-weight: bold;
 
@@ -136,7 +139,7 @@ a:visited {
 .sidebar {
     grid-row: 1 / span 4;
     gap: 1.8rem;
-    background-color:  #155e75;
+    background-color:#6da5acc5;
 }
 
 .dashboard {
@@ -145,23 +148,32 @@ a:visited {
     align-items: center;
     margin-top: 1.8rem;
     margin-bottom: 2.5rem;
-    font-size: 2rem;
-    font-weight: bold;
+    font-weight: bolder;
     gap: 1rem;
     margin-left: 1rem;
-    color: white;
+    color: #083344;
+    letter-spacing: .2rem;
 }
 
 .dash_icon {
     width: 20%;
-    height: 2.3rem;
+    height: 2.8rem;
     color: white;
+}
+
+.dash:link {
+    color: #083344;
+    font-size: 2rem;
+    text-shadow: rgb(255, 255, 255) 3px 0px 0px, rgb(255, 255, 255) 2.83487px 0.981584px 0px, rgb(255, 255, 255) 2.35766px 1.85511px 0px, rgb(255, 255, 255) 1.62091px 2.52441px 0px, rgb(255, 255, 255) 0.705713px 2.91581px 0px, rgb(255, 255, 255) -0.287171px 2.98622px 0px, rgb(255, 255, 255) -1.24844px 2.72789px 0px, rgb(255, 255, 255) -2.07227px 2.16926px 0px, rgb(255, 255, 255) -2.66798px 1.37182px 0px, rgb(255, 255, 255) -2.96998px 0.42336px 0px, rgb(255, 255, 255) -2.94502px -0.571704px 0px, rgb(255, 255, 255) -2.59586px -1.50383px 0px, rgb(255, 255, 255) -1.96093px -2.27041px 0px, rgb(255, 255, 255) -1.11013px -2.78704px 0px, rgb(255, 255, 255) -0.137119px -2.99686px 0px, rgb(255, 255, 255) 0.850987px -2.87677px 0px, rgb(255, 255, 255) 1.74541px -2.43999px 0px, rgb(255, 255, 255) 2.44769px -1.73459px 0px, rgb(255, 255, 255) 2.88051px -0.838247px 0px;
 }
 
 .icon {
     display: flex;
     flex-direction: row;   
-    gap: 1rem;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.7rem;
+    gap: 1.4rem;
 }
 
 .first_layer {
@@ -169,20 +181,22 @@ a:visited {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-column: 1/ span 2;
-    gap: 1.5rem;
+    gap: 1.8rem;
     margin-left: 1.5rem;
-    margin-top: 1.5rem;
-    font-size: 1.3rem;
+    margin-top:3.5rem;
+    font-size: 1.4rem;
+    font-weight: 550;
     color: white;
 }
+
 
 .second_layer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-column: 1/ span 2;
-    margin-top: 1rem;
-    gap: 1rem;
+    margin-top: 3.8rem;
+    gap: 1.8rem;
     margin-left: 1.5rem;
     font-size: 1.3rem;
     color: white;
