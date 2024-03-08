@@ -162,7 +162,7 @@ a:visited {
 }
 
 .dash:link {
-    color: #b2c7cf;
+    color: #93d8f3;
     font-size: 2rem;
 }
 
@@ -171,7 +171,7 @@ a:visited {
     flex-direction: row;   
     align-items: center;
     width: 2.8rem;
-    height: 2.7rem;
+    height: 2.3rem;
     gap: 1.4rem;
 }
 
@@ -209,7 +209,7 @@ a:visited {
     grid-row: 2 / span 3;
     gap: 1rem;
     margin-top: -5.5rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .u_projects {
@@ -225,17 +225,43 @@ a:visited {
 }
 
 .project_box {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
     width: 80%;
-    background-color: white;
+    background: linear-gradient(
+        to right,
+        #aee2ff,
+        #aee2ff .6rem,
+        #f3f6f4 .5rem,
+        #f3f6f4 100%
+    );
     padding: 1rem;
     padding-top: 1.2rem;
     padding-left: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1rem;
     border-radius: .5rem;
 }
 
+.card_opt {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .8rem;
+    gap: 1.8rem;
+}
+
+.card_icon {
+    width: 2rem;
+    height: 1.8rem;
+
+}
+
+.project_name {
+    font-weight: bold;
+}
+
 .lorem {
-    padding: .2rem;
+    padding: .5rem;
     font-size: 1rem;
 }
 
