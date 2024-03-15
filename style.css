@@ -16,10 +16,8 @@ html {
 
 body {
     display: grid;
-    grid-template-columns: .8fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr .5fr;
+    grid-template-rows: .25fr 1.2fr;
     background-color: #e7d9e0;
-
 }
 
 .header {
@@ -27,12 +25,13 @@ body {
     flex-direction: row;
     justify-content:space-between;
     grid-column: 2/ span 4;
+    grid-row: 1/ span 1;
     gap: 4rem;
     flex-wrap: wrap;
-    height: 14rem;
     padding: 1.3rem;
     align-items: center;
     background-color: #063a58;
+    margin-bottom: 1.3rem;
 }
 
 .search_icon {
@@ -149,10 +148,10 @@ a:visited {
     margin-top: 1.8rem;
     margin-bottom: 2.5rem;
     font-weight: bolder;
-    gap: 1rem;
-    margin-left: 1rem;
+    gap: .5rem;
+    margin-left: .8rem;
     color: #083344;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
 }
 
 .dash_icon {
@@ -163,7 +162,8 @@ a:visited {
 
 .dash:link {
     color: #93d8f3;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-right: .5rem;
 }
 
 .icon {
@@ -203,13 +203,12 @@ a:visited {
 
 .main {
     display: flex;
+    grid-row: 2 /span 2;
     flex-direction: column;
     align-items:baseline;
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 3;
     gap: 1rem;
-    margin-top: -5.5rem;
-    margin-left: 1.5rem;
+    margin-left: 1.9rem;
+    margin-bottom: 1.5rem;
 }
 
 .u_projects {
@@ -222,13 +221,14 @@ a:visited {
     grid-template-columns: repeat(2, 7fr);
     grid-template-rows: repeat(3, 5fr);
     gap: 3rem;
+    margin-left: 1rem;
 }
 
 .project_box {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    width: 80%;
+    width: 87%;
     background: linear-gradient(
         to right,
         #aee2ff,
@@ -266,18 +266,51 @@ a:visited {
 }
 
 .side_main {
-    display: flex;
-    flex-direction: column;
-    margin-top: -2.7rem;
-    margin-right: 4rem;
+    display: grid;
+    grid-template-rows: .2fr 2fr;
+    grid-template-columns: .9fr;
+    margin-left: 2.5rem;
     gap: .5rem;
 }
 
 .announcements {
-    display: grid;
-    grid-template-rows: repeat(3, 2fr);
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f6f4;
+    border-radius: .5rem;
+    width: 17.5rem;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 1.6rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    
+}
+.announ {
+    margin-bottom: .1rem;
+    margin-left: -1rem;
 }
 
+.announcements > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .2rem;  
+}
 
+.sidecard_text {
+    font-size: .7rem;
+    color: rgb(109, 108, 108);
+    padding-bottom: .6rem;
+    border-bottom: 1px solid rgb(126, 122, 122);
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f6f4;
+    border-radius: .5rem;
+    width: 17.5rem;
+    gap: 1.5rem;
+    padding: 1.6rem;
+    margin-bottom: 1rem;
+    
+}
