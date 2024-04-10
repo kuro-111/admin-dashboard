@@ -31,5 +31,5 @@ function dadjokesplaceHolder (event) {
 
 setInterval(()=> {
     dadjokesplaceHolder();
-}, 7000)
+}, 15000)
 
